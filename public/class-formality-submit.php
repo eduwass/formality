@@ -290,7 +290,7 @@ class Formality_Submit {
       $errors[] = 'data save error';
     }
 
-    do_action('formality_after_save_data', $data, $errors);
+    do_action('formality_after_save_data', $data, $errors, $result_id);
     return $errors;
   }
 
